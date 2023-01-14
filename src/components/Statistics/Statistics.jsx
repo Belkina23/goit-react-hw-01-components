@@ -19,7 +19,7 @@ return (
   {stats.map(({ id, label, percentage }) => (
         <StatItem key={id}>
         <StatLabel>{label}</StatLabel>
-        <StatPercentage>{percentage}</StatPercentage>
+        <StatPercentage>{percentage}%</StatPercentage>
       </StatItem>
    )) }
 </StatList>

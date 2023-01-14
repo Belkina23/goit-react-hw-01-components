@@ -18,8 +18,6 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 text-align: center;
-padding: 20px 15px;
-}
 `;
 
 export const UserName = styled.p`
