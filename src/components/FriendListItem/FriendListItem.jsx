@@ -5,9 +5,9 @@ import {
     FriendsName,
 } from './FriendListItem.style'
 
-function FriendListItem({ id, avatar, name, isOnline }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <FriendsItem key={id}>
+    <FriendsItem>
       <FriendsStatus isOnline={isOnline} />
       <img className='avatar' src={avatar} alt={name} width="100" />
       <FriendsName>{name}</FriendsName>

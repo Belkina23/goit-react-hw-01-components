@@ -11,14 +11,14 @@ import {
 import PropTypes from 'prop-types';
 
 function Profile({
-  user: {
+
     username,
     tag,
     location,
     avatar,
     stats: { followers, views, likes },
   },
-}) {
+) {
   return (
     <ProfileContainer>
       <Description>
@@ -48,7 +48,6 @@ function Profile({
 }
 
 Profile.propTypes = {
-  user: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
@@ -57,8 +56,8 @@ Profile.propTypes = {
       followers: PropTypes.number.isRequired,
       views: PropTypes.number.isRequired,
       likes: PropTypes.number.isRequired,
-    }),
-  }),
-};
+    }).isRequired,
+  };
+
 
 export { Profile };

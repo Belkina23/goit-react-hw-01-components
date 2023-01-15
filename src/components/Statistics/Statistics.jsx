@@ -13,7 +13,7 @@ function Statistics(
     ) {
 return (
     <StatSection>
-  {title.length > 0 && <TitleSiction>{title}</TitleSiction>}
+  <TitleSiction>{title}</TitleSiction>
 
   <StatList>
   {stats.map(({ id, label, percentage }) => (
@@ -29,12 +29,12 @@ return (
 
 Statistics.prototype = {
     title: PropTypes.string,
-    stats: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf.isRequired(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
             percentage: PropTypes.number.isRequired,
-        })
+        }).isRequired
     ),
 };
 
