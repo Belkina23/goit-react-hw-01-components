@@ -29,7 +29,7 @@ return (
 
 Statistics.prototype = {
     title: PropTypes.string,
-    stats: PropTypes.arrayOf.isRequired(
+    stats: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
