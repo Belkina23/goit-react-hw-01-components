@@ -13,7 +13,7 @@ function Statistics(
     ) {
 return (
     <StatSection>
-  <TitleSiction>{title}</TitleSiction>
+  {title.length > 0 && <TitleSiction>{title}</TitleSiction>}
 
   <StatList>
   {stats.map(({ id, label, percentage }) => (
